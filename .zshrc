@@ -42,6 +42,12 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 setopt prompt_subst
 setopt transient_rprompt
 
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUPSTREAM=auto
 PROMPT='[%F{yellow}%n%f@%F{yellow}%m%f]$ '
 PROMPT2='[%F{yellow}%n%f@%F{yellow}%m%f]> '
 RPROMPT='%F{green}%~%f%F{red}$(__git_ps1)%f'
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
