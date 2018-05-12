@@ -1,2 +1,2 @@
-# conf
-config for local env
+# dotfiles
+dotfiles for Yuki
